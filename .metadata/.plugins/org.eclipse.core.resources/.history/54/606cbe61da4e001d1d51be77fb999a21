@@ -1,0 +1,16 @@
+package ejercicios_programacion;
+
+import java.util.Scanner;
+
+public class ejercicio1 {
+    public static void main (String[] args) {
+    	try (Scanner teclado = new Scanner(System.in)) {
+    	int A, B;//Los dos valores que tenemos que tiene que introducir el usuario
+    	
+    	System.out.println("Ingresa el valor A");
+    		A=teclado.nextInt(); //usuario escribe su numero de faltas
+	    System.out.println("Ingresa el valor B");
+	    	B=teclado.nextInt(); //usuario escribe su numero de faltas
+    }
+   }
+}

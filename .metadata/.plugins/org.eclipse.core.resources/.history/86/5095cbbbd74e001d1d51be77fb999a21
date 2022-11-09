@@ -1,0 +1,66 @@
+package ejercicios_programacion;
+
+import java.util.Scanner;
+/**
+        Este programa solicita una letra e imprime el número
+        correspondiente en el teléfono. Si la letra no es
+        válida, imprime un mensaje de error
+*/
+public class telefono { //clase
+    public static void main ( String[] args) { //main
+        try (Scanner teclado = new Scanner(System.in)) {
+			char letra;
+			int numero = 0;
+			String cad; //cadena auxiliar para poder leer letra
+			
+			while (true) {
+			    System.out.println("Introduce una letra en mayúscula");
+			    //letra = teclado.nextline().charAt(0)
+			    cad = teclado.nextLine().toUpperCase();
+			    letra = cad.charAt(0);
+			 
+				switch ( letra ) { //switch
+			    case 'A':
+			    case 'B':
+			    case 'C':
+			         numero=1; break;
+			    case 'D':
+			    case 'E':
+			    case 'F':
+			         numero=2; break;
+			    case 'G':
+			    case 'H':
+			    case 'I':
+			         numero=3; break;
+			    case 'J':
+			    case 'K':
+			    case 'L':
+			         numero=4; break;
+			    case 'M':
+			    case 'N':
+			    case 'O':
+			         numero=5; break;
+			    case 'P':
+			    case 'Q':
+			    case 'R':
+			         numero=6; break;
+			    case 'S':
+			    case 'T':
+			    case 'U':
+			         numero=7; break;
+			    case 'W':
+			    case 'X':
+			    case 'Y':
+			    case 'Z':
+			         numero=8; break;
+			    } //switch
+			     
+			    if ( numero == 0 )
+			        System.out.println("Error: " + letra);
+			    else 
+			    System.out.println("La letra " + letra + " corresponde el número " + numero);
+
+			}
+		}
+    }
+}
